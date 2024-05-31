@@ -1,0 +1,20 @@
+<script src="https://delivery.socketlink.de/socket.io.js"></script>
+<script>
+    // Create handshake
+    const socket = io();
+
+    // Do something on connect
+    socket.on('connect', () => {
+        console.log('connected to server');
+    });
+
+    // Do something on disconnect
+    socket.on('disconnect', () => {
+        console.log('disconnected from server');
+    });
+
+    // Do something on custom packet
+    socket.on('packet123', (StringData123) => {
+        console.log('String: ' + StringData123);
+    })
+</script>
