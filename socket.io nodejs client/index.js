@@ -16,5 +16,5 @@ WebSocketClient.on('disconnect', () => {
 
 // Do something on custom packet
 WebSocketClient.on('packet123', (StringData123) => {
-    console.log('String: ' + StringData123);
+    console.log('String:', StringData123);
 })
